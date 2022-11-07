@@ -19,7 +19,7 @@ public class CalculatorRunner {
 
         if (expression.contains("*")) {
             index = expression.indexOf("*");
-            substring1 = expression.substring(0, index - 2);
+            substring1 = expression.substring(0, index - 1);
             substring2 = expression.substring(index + 2);
             num1 = Double.parseDouble(substring1);
             num2 = Double.parseDouble(substring2);
@@ -27,7 +27,7 @@ public class CalculatorRunner {
 
         } else if (expression.contains("/")) {
             index = expression.indexOf("/");
-            substring1 = expression.substring(0, index - 2);
+            substring1 = expression.substring(0, index - 1);
             substring2 = expression.substring(index + 2);
             num1 = Double.parseDouble(substring1);
             num2 = Double.parseDouble(substring2);
@@ -35,7 +35,7 @@ public class CalculatorRunner {
 
         } else if (expression.contains("+")) {
             index = expression.indexOf("+");
-            substring1 = expression.substring(0, index - 2);
+            substring1 = expression.substring(0, index - 1);
             substring2 = expression.substring(index + 2);
             num1 = Double.parseDouble(substring1);
             num2 = Double.parseDouble(substring2);
@@ -43,7 +43,7 @@ public class CalculatorRunner {
 
         } else if (expression.contains("-")) {
             index = expression.indexOf("-");
-            substring1 = expression.substring(0, index - 2);
+            substring1 = expression.substring(0, index - 1);
             substring2 = expression.substring(index + 2);
             num1 = Double.parseDouble(substring1);
             num2 = Double.parseDouble(substring2);
@@ -51,15 +51,15 @@ public class CalculatorRunner {
 
         } else if (expression.contains("%")) {
             index = expression.indexOf("%");
-            substring1 = expression.substring(0, index - 2);
+            substring1 = expression.substring(0, index - 1);
             substring2 = expression.substring(index + 2);
             num1 = Double.parseDouble(substring1);
             num2 = Double.parseDouble(substring2);
             mod = true;
 
         } else if (expression.contains("^")) {
-            index = expression.indexOf("*");
-            substring1 = expression.substring(0, index - 2);
+            index = expression.indexOf("^");
+            substring1 = expression.substring(0, index - 1);
             substring2 = expression.substring(index + 2);
             num1 = Double.parseDouble(substring1);
             num2 = Double.parseDouble(substring2);
